@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aero", "Aero\Aero.csproj", "{E15801D7-237B-4D1A-944C-5064D81D48C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{EF8B439C-B98F-4719-A187-0B5C35B24FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{13AEC75D-FB2E-4CA5-AFF8-F12A58B80C00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E15801D7-237B-4D1A-944C-5064D81D48C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15801D7-237B-4D1A-944C-5064D81D48C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15801D7-237B-4D1A-944C-5064D81D48C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15801D7-237B-4D1A-944C-5064D81D48C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8B439C-B98F-4719-A187-0B5C35B24FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8B439C-B98F-4719-A187-0B5C35B24FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8B439C-B98F-4719-A187-0B5C35B24FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8B439C-B98F-4719-A187-0B5C35B24FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AEC75D-FB2E-4CA5-AFF8-F12A58B80C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AEC75D-FB2E-4CA5-AFF8-F12A58B80C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AEC75D-FB2E-4CA5-AFF8-F12A58B80C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AEC75D-FB2E-4CA5-AFF8-F12A58B80C00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

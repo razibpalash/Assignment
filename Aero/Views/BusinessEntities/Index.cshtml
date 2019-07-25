@@ -1,0 +1,113 @@
+﻿<br />
+<p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="ClearData();">Add New</button><br /><br />
+</p>
+<table class="table" id="datatable">
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Mobile</th>
+            <th>Current Balance</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"  style="width: 850px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel">Add</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="col-md-6">
+                        <input type="hidden" class="form-control" id="BusinessId" />
+                        <div class="form-group">
+                            <label for="Code">Code</label>
+                            <input type="text" class="form-control" id="Code" placeholder="Code"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="Street">Street</label>
+                            <input type="text" class="form-control" id="Street" placeholder="Street"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="City">City</label>
+                            <input type="text" class="form-control" id="City" placeholder="City"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="State">State</label>
+                            <input type="text" class="form-control" id="State" placeholder="State"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="Zip">Zip</label>
+                            <input type="text" class="form-control" id="Zip" placeholder="Zip"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Country">Country</label>
+                            <input type="text" class="form-control" id="Country" placeholder="Country" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Mobile">Mobile</label>
+                            <input type="text" class="form-control" id="Mobile" placeholder="Mobile" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" id="Phone" placeholder="Phone" />
+                        </div>
+                        <div class="form-group">
+                            <label for="ContactPerson">ContactPerson</label>
+                            <input type="text" class="form-control" id="ContactPerson" placeholder="Contact Person" />
+                        </div>
+                        <div class="form-group">
+                            <label for="ReferredBy">ReferredBy</label>
+                            <input type="text" class="form-control" id="ReferredBy" placeholder="Referred By" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Balance">Balance</label>
+                            <input type="number" class="form-control" id="Balance" placeholder="Balance" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CurrentBalance">CurrentBalance</label>
+                            <input type="number" class="form-control" id="CurrentBalance" placeholder="Current Balance"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="State">Status</label>
+                        <div class="State">
+                            <label  class="radio-inline"><input type="radio" name="Status" checked="checked" value="1">New</label>
+                            <label  class="radio-inline"><input type="radio" name="Status" value="2">Active</label>
+                        
+                            <label  class="radio-inline"><input type="radio" name="Status" value="3">InActive</label>
+                            <label  class="radio-inline"><input type="radio" name="Status" value="4">Locked</label>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Add</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Update</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+    <script src="~/Scripts/PageJs/BusinessEntitiesScripts.js"></script>
+}
